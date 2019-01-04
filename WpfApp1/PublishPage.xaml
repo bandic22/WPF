@@ -1,0 +1,22 @@
+﻿<Page x:Class="MicrosoftEventsPublisher.PublishPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MicrosoftEventsPublisher"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="PublishPage" Width="574.188">
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Margin="201,79,0,0" VerticalAlignment="Top" Width="199" x:Name="SiteSelector" ItemsSource="{StaticResource sites}" SelectedItem="{Binding selectedSite}" SelectionChanged="SiteSelector_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="201,127,0,0" VerticalAlignment="Top" Width="199" x:Name="SlotSelector" ItemsSource="{StaticResource slots}" SelectedItem="{Binding selectedSlot}" SelectionChanged="SlotSelector_SelectionChanged"/>
+        <Label Content="Site" HorizontalAlignment="Left" Margin="148,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Slot" HorizontalAlignment="Left" Margin="148,124,0,0" VerticalAlignment="Top"/>
+        <Button Content="Select Solution Location" HorizontalAlignment="Left" Margin="222,191,0,0" VerticalAlignment="Top" Width="154" Click="ProjectDirectoryButton_Click_1"/>
+        <Label Content="" HorizontalContentAlignment="Center" Margin="195,239,170.4,0" VerticalAlignment="Top" x:Name="PathDisplay" Foreground="Black" RenderTransformOrigin="0.454,0.616"/>
+        <Label Content="" HorizontalContentAlignment="Center" Margin="112,348,87.4,0" VerticalAlignment="Top" x:Name="ValidationMessage1" Foreground="Red" RenderTransformOrigin="0.489,2.177"/>
+        <Label Content="" HorizontalContentAlignment="Center" Margin="112,397,87.4,0" VerticalAlignment="Top" x:Name="ValidationMessage2" Foreground="Red" RenderTransformOrigin="0.489,2.177"/>
+        <Button Content="Build and Publish" HorizontalAlignment="Left" Margin="222,286,0,0" VerticalAlignment="Top" Width="154"/>
+        <CheckBox Content="Publish the same version to C1" HorizontalAlignment="Left" Margin="222,311,0,0" VerticalAlignment="Top" Width="217"/>
+    </Grid>
+</Page>

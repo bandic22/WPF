@@ -1,8 +1,8 @@
-﻿<Application x:Class="WpfApp1.App"
+﻿<Application x:Class="MicrosoftEventsPublisher.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfApp1"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:MicrosoftEventsPublisher"
+             StartupUri="LoginPage.xaml">
     <Application.Resources>
         <local:Slots x:Key="slots"/>
         <local:Websites x:Key="sites"/>
